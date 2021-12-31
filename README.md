@@ -2,7 +2,7 @@
 Plannr is an organizational platform developed using Java, in the form of an Android app, that helps university students coordinate their everyday routine, from schoolwork and expenses to their personal life. Users are able to track their events and deadlines to fit their personal needs, by the means of a calendar and a to-do list (displays events, for which the user can check to complete tasks).
 
 <p align="center">
-  <img src="https://github.com/dalshekerchi/plannr/blob/main/screenshots/plannr_blob_lavender.png" alt="Plannr" width="300">
+  <img src="https://github.com/hellokathylee/plannr/blob/main/screenshots/plannr_blob_lavender.png" alt="Plannr" width="300">
 </p>
 
 ## Built with
@@ -11,14 +11,14 @@ Plannr is an organizational platform developed using Java, in the form of an And
 
 ## Screenshots
 <p float="left">
-  <img src="https://github.com/dalshekerchi/plannr/blob/main/screenshots/plannr_screenshot_login.png" alt="Log In" width="235">
-  <img src="https://github.com/dalshekerchi/plannr/blob/main/screenshots/plannr_screenshot_main.png" alt="Main View" width="235">
-  <img src="https://github.com/dalshekerchi/plannr/blob/main/screenshots/plannr_screenshot_school.png" alt="School View" width="235">
-  <img src="https://github.com/dalshekerchi/plannr/blob/main/screenshots/plannr_screenshot_add_event.png" alt="Add Event" width="235">
-  <img src="https://github.com/dalshekerchi/plannr/blob/main/screenshots/plannr_screenshot_view_event.png" alt="View Event" width="235">
-  <img src="https://github.com/dalshekerchi/plannr/blob/main/screenshots/plannr_screenshot_expenses.png" alt="Expenses View" width="235">
-  <img src="https://github.com/dalshekerchi/plannr/blob/main/screenshots/plannr_screenshot_add_expenses.png" alt="Add Expense" width="235">
-  <img src="https://github.com/dalshekerchi/plannr/blob/main/screenshots/plannr_screenshot_settings.png" alt="Settings View" width="235">
+  <img src="https://github.com/hellokathylee/plannr/blob/main/screenshots/plannr_screenshot_login.png" alt="Log In" width="235">
+  <img src="https://github.com/hellokathylee/plannr/blob/main/screenshots/plannr_screenshot_main.png" alt="Main View" width="235">
+  <img src="https://github.com/hellokathylee/plannr/blob/main/screenshots/plannr_screenshot_school.png" alt="School View" width="235">
+  <img src="https://github.com/hellokathylee/plannr/blob/main/screenshots/plannr_screenshot_add_event.png" alt="Add Event" width="235">
+  <img src="https://github.com/hellokathylee/plannr/blob/main/screenshots/plannr_screenshot_view_event.png" alt="View Event" width="235">
+  <img src="https://github.com/hellokathylee/plannr/blob/main/screenshots/plannr_screenshot_expenses.png" alt="Expenses View" width="235">
+  <img src="https://github.com/hellokathylee/plannr/blob/main/screenshots/plannr_screenshot_add_expenses.png" alt="Add Expense" width="235">
+  <img src="https://github.com/hellokathylee/plannr/blob/main/screenshots/plannr_screenshot_settings.png" alt="Settings View" width="235">
 </p>
 
 ## How to Run
@@ -54,7 +54,7 @@ can now run the app by clicking on the "Run" button at the top right of the wind
 
 ### Verify That You Launched Successfully
 If you see [this](https://imgur.com/a/uoIiAwn) as the landing page and [this](https://imgur.com/a/pJIsR33) as the login
-page, you have launched successfully ([GIF example](https://imgur.com/a/XUPTtWK))
+page, you have launched successfully ([GIF example](https://imgur.com/a/XUPTtWK))!
 
 ## Authors
 * **Dana Al Shekerchi** - *Full Stack Developer* - [dalshekerchi](https://github.com/dalshekerchi)
