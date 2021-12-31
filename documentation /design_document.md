@@ -1,23 +1,24 @@
 # Design Document
 
 ## Table of Contents
-#### - [Design Document Statement](#design-document-statement)
-#### - [Functionality](#functionality) 
-- [Specification](#specification)
-- [CRC Cards](#crc-cards)
-#### -[Code Organization](#code-organization)
-#### -[Refactoring and Code Smells](#refactoring-and-code-smells)
-#### - [Testing](#testing)
-#### - [Code Style and Documentation](#code-style-and-documentation)
-#### - [Use of GitHub Features](#use-of-github-features)
-#### - [Clean Architecture](#clean-architecture)
+- [Design Document Statement](#design-document-statement)
+- [Functionality](#functionality) 
+  - [Specification](#specification)
+  - [CRC Cards](#crc-cards)
+- [Code Organization](#code-organization)
+- [Refactoring and Code Smells](#refactoring-and-code-smells)
+- [Testing](#testing)
+- [Code Style and Documentation](#code-style-and-documentation)
+- [Use of GitHub Features](#use-of-github-features)
+- [Clean Architecture](#clean-architecture)
 - [Design Patterns](#design-patterns)
-#### - [SOLID Principles](#solid-principles)
-#### - [Instructions for App Launch, Launching Tests and Use of Features](#instructions-for-app-launch-launching-tests-and-use-of-features)
-#### - [Accessibility Report](#accessibility-report)
-#### - [Progress Report](#progress-report)
+- [SOLID Principles](#solid-principles)
+- [Instructions for App Launch, Launching Tests and Use of Features](#instructions-for-app-launch-launching-tests-and-use-of-features)
+
 
 ***
+
+
 ## Design Document Statement
 
 ### Is all the above discussed in an organized way?
@@ -29,7 +30,7 @@ We have thoroughly read the Phase 1 + 2 rubric and incorporated most feedback gi
 our design document. Our design document is detailed and clear while also containing extra features such as instructions 
 on how to set up the app and how run certain features.
 
-***
+
 ## Functionality 
 
 ### Specification
@@ -66,7 +67,8 @@ and sort them. Other additions include a sign-up, login and income feature, sett
 
 ### CRC Cards
 Please see the linked for the updated [CRC Cards](https://docs.google.com/document/d/1wAnKPMUv0o_FJ9qT4U98Bf2eMEP8u2Y1_nC9lcLH76U/edit).
-***
+
+
 ## Code Organization
 Our program follows the [Java package naming convention](https://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html), 
 in conjunction with CLEAN architecture layers.
@@ -80,14 +82,14 @@ in conjunction with CLEAN architecture layers.
 * Other subdirectories are named by CLEAN architecture layers
     * e.g. `UseCases` hosts the use cases for our program, `Entities` host the entities of our program.
 
-***
+
 ## Refactoring and Code Smells
 Continuing from phase 1, we kept classes short with good documentation to avoid code smells. As suggested in our
 feedback, we also deleted the old src directory and refactored the directory names. Unfortunately, we could not change
 the Uni_life_tracker folder name to Plannr, as it caused a bunch of errors that at this stage of the project would do
 more harm than good and would take up time for other more valuable improvements
 
-***
+
 ## Testing
 
 #### Test Coverage
@@ -95,7 +97,6 @@ more harm than good and would take up time for other more valuable improvements
   so specific tests for entities would be redundant
 * Use Cases, Gateways are all tested with their respective tests in the program's Test Sources root directory
 
-***
 
 ## Code Style and Documentation
 For phase 2, we made sure to add JavaDocs with our work, describing the classes and class attributes. We followed the
@@ -107,7 +108,7 @@ Previous phase, a number of our class names were quite vague with their function
 with their use. Additionally, prior to each commit, we also addressed any form of warnings from IntelliJ that could be
 resolved. Overall, we leveraged documentation to highlight and explain a more straightforward overview of our work.
 
-***
+
 ## Use of GitHub Features
 
 ### Issues
@@ -139,7 +140,6 @@ After receiving phase 1 feedback regarding the level of detail of our Git commit
 conventions covered in the website: [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 and made sure to incorporate them into every commit.
 
-***
 
 ## Clean Architecture
 *NOTE: Presentation for phase 2 is out of date and does not match with the final submission.
@@ -159,7 +159,7 @@ activities to the use cases to the entities, and back to the use cases and then 
 ### UML Diagram
 The diagram is shared with our TA's email through oneNote, it is a document that cannot fit into the design document.
 
-### Scenario Walk-Through that shows Clean Architecture
+### Scenario Walk-Through Demonstrating Clean Architecture
 
 <u>Scenario:</u> The user arrives at the main page, which displays their list of events taking place that day and has 
 the option to sort the event list, which can be displayed list by date-time or by priority. By default, it is first 
@@ -225,7 +225,6 @@ instance of `DatabaseClient` and utilizes the `getWritableDatabase()` method fro
 the database for storing/retrieving relevant data, i.e., the implementation is moved from  `DatabaseClient` to the
 gateway classes.
 
-***
 
 ## SOLID Principles
 
@@ -300,7 +299,8 @@ gateway classes.
   by time or priority, call the appropriate use cases such as `GetEventsOfDate` and the `EventSorter` subclasses, and then
   format and present the outputs of the use cases in order to display the sorted list of events in our Android app.
   Some classes discussed may have been removed in order to find a working version of our app.
-***
+
+
 ## Instructions for App Launch, Launching Tests and Use of Features
 
 ### System Setup
@@ -379,7 +379,6 @@ system setup. Check above for details.
 
 [**Video demo:** Using Expenses](https://github.com/CSC207-UofT/course-project-generic-name-1/blob/main/phase2/videos/plannr_demo_expenses.mp4)
 
-
 #### How to Use School
 1. Click the school button on the sidebar menu
 2. Enter a school event by selecting the plus sign on the top right of the calendar view
@@ -407,161 +406,3 @@ system setup. Check above for details.
 2. Run Plannr.
 
 [**Video demo:** Using Dark Mode](https://github.com/CSC207-UofT/course-project-generic-name-1/blob/main/phase2/videos/plannr_demo_dark_mode.mp4)
-
-***
-
-## Accessibility Report
-
-### Universal Design Principles
-
-#### Principle 1: Equitable Use
-If released on the market, Plannr will be free to include users from different socioeconomic backgrounds. 
-Our app does not have additional features that require users to have a more advanced skill level, it does not create 
-segregation among users. It also offers the same password checking and account features for all users, ensuring that 
-users have a password-protected account. Finally, Plannr's UI is simple and easy to use,with a nice design appealing to 
-all users.
-
-
-#### Principle 2: Flexibility in Use
-The Sort feature on the main page gives users the flexibility and choice of how they would like to sort their events, 
-as users can sort either by time or priority. Plannr also offers a dark mode view to accommodate different visual 
-preferences. In the future, an instructions page showing details on how to use the app can be added to Settings. 
-Additionally, a more detailed setting page can be added to accommodate more customizations in the future. Preferences 
-such as currency types (such as CAD or USD) display the time (24 hours vs. AM or PM) should be included within the 
-settings page, allowing users to adjust accordingly.
-
-
-#### Principle 3: Simple and Intuitive Use
-When first launched, Plannr prompts the user to sign up or log in straightforwardly, displaying large buttons with clear 
-text. Plannr provides feedback for text fields, such as name, email, and password, when signing up. If they are left 
-blank or have the incorrect input type, it suggests changes to the user. It also prompts the user to enter a strong 
-password that follows certain password requirements clearly printed underneath the textbox after a failed attempt. 
-Finally, the language and vocabulary within Plannr are simple and comprehensive.
-
-
-#### Principle 4: Perceptible Information
-Plannr uses large bold text for important headings that represent different functions within the app, such as expenses, 
-to-dos and adding school events. It also has large buttons with legible text that stands out on a white background. 
-Plannr has icons for the different types of school events to avoid cluttering the add event view with text.
-In addition to dark mode, the colour scheme of the entire UI (black, white and purple) ensures there is high contrast, 
-and all features are visible.
-
-
-#### Principle 5: Tolerance for Error
-Plannr has fail-safe features that stop the user from inputting an empty school event, empty expense, income or settings 
-text box with error messages.The most used element, the to-do list, is displayed as the main view, while settings and 
-other less commonly used features have to be located using the navigation menu. In the future, Plannr should contain 
-more detailed error checking for text inputs such as whether the user's name is allowed to have numbers or not.
-
-
-#### Principle 6: Low Physical Effort
-In the future, Plannr will allow users to add multiple expenses and events at once without being redirected to the 
-main view, or the main expenses view to minimize repetitive action. As a mobile app, Plannr does not require excessive 
-physical effort to use. It also does not have any advanced graphic features that would drain battery life.
-
-
-#### Principle 7: Size and Space for Approach and Use
-This principle is not applicable for Plannr as it is a mobile app (software) and does not come with additional hardware
-elements that would need to accommodate a variety of users.
-
-### Target Market
-The target market for Plannr would be students ranging from high school to university. Plannr offers an option for users 
-to input school events such as deadlines which are most commonly associated with student life. Students often have 
-difficulties balancing all their academic dates, such as deadlines, tests, study sessions or assignments, so seeing all 
-their events on a to-do list will encourage them to stay on track. In addition, many students are learning how to budget 
-money effectively for the first time and tracking their spending offers great visual support. When a user sees their 
-list of expenses and the total at the bottom, it will encourage them to be more mindful about their spending. Moreover, 
-the Plannr UI targets a younger population with its playful design and colour scheme. Overall, it would be beneficial 
-for students looking for an organizational platform that combines both their academic and financial life for easy access.
-
-### Least Likely Demographic
-People who are not students would not find Plannr particularly useful. Specifically, younger students in elementary 
-school or children would be less likely to use Planner. They would have no use for the expense features; they do not 
-have a stable source of income or are not managing their own finances. In addition, older adults who are retired or not 
-students are less likely to use the school work-related features. Finally, middle-aged adults will have no use for both 
-the school work and the expenses features. Many employed adults have already graduated from high school or university 
-and are already using more advanced banking apps that automatically display their expenditures.
-
-***
-
-## Progress Report
-
-### Overall Group Progress
-Previously in phase 1, our group was split into the backend and frontend teams.
-For phase 2, we merged together again, and each person had their own main responsibilities.
-The frontend team was responsible for their respective views and related android activities, while the backend 
-team was split into testing, database, and clean architecture. Finally, the teams connected in order to connect the 
-activities to the backend.
-
-
-### Evgenia
-Throughout both phase 1 and 2, Evgenia was on the frontend team and focused on continuing to implement and enhance UI
-features added in phase 1 using Android Studio. Within the[`Expenses backend connection`](https://github.com/CSC207-UofT/course-project-generic-name-1/pull/70)
-pull request, she worked on connecting the add expenses page and the expenses list to the backend and database, 
-ensuring the user's inputted expense information could be stored in the database and then later retrieved for display.
-This pull request was essential for the overall functionality of Plannr as expenses are one of the app's key features.
-In addition, she included a recycler view for expenses list that would be updated with information from the database.
-She also added an income feature to enhance the overall functionality of expenses, allowing a user to see how much of 
-their income they have left after calculating their total expenses. In addition, Evgenia worked on the initial design 
-of the login page and used the user's name by creating a welcome message that greets that user with their name in the 
-main page view. Evgenia also added to the design document by writing the specification, the accessibility report, the 
-instructions for how to use features of Plannr, the GitHub feature section, refactoring section, the updated CRC cards 
-and both the overall progress report and her part. Finally, edited and reformatted the entire design document. 
-
-### Kathy
-For phase 2 of the project, Kathy continued with her role as a frontend member of the team. As mentioned in the previous progress report, she continued to develop and improve the overall functionality of UI. Following the phase 1 feedback, Kathy added and implemented a log out button. She also modified the UI layout of adding events, adding a navigation menu to switch between event types and improving the approach to adding user input. As well, she contributed to the implementation of the sort dropdown in the main To Do’s view and display of the event list (under the calendar) in the School view. Additionally, Kathy implemented the dark mode option for Plannr, which would change in place in accordance to the system theme. Throughout the project, she was responsible for ensuring that the overall UI was visually cohesive, and reformatted the activity layouts to reflect this consistency. This was strongly demonstrated with the [`reformat_and_documentation`](https://github.com/CSC207-UofT/course-project-generic-name-1/pull/82) pull request. Additionally in this branch, Kathy worked on code styling and cleanup, where she renamed some class names, added documentation, and discarded unused files. With regards to the design document, Kathy wrote the Code Style and Documentation portion of the report and recorded the app demo tutorials.
-
-### Dana
-For phase 2, Dana worked on multiple components of the project. As a Front-End Developer, she worked on creating the UI 
-components of the project. One of the main UI features that she implemented was the calendar on the School event Activity. 
-She used a RecyclerView to create the different dates on the calendar. Then the positions of the dates were used to 
-retrieve the events from that day to the database. On top of that, Dana was the leading developer that connected the 
-Front-end features with the SQLite Database. With her previous knowledge of SQL and new knowledge of Andriod, 
-she connected the project so that the information inputted by the user can be saved to the database. One of her most 
-significant pull request was [`add-event-backend`](https://github.com/CSC207-UofT/course-project-generic-name-1/pull/81). 
-This PR was important because it was what finally made the user be able to add an event to their calendar, which was 
-the whole point of the app. Dana had to work with the queries to save the `SchoolEvents` attributes and insert them into 
-the table to implement this. Next, the attributes needed to be retrieved from the database using the User's ID to display 
-a list of all the user's events of a particular date. This implementation was important because it would also be used to 
-display information in the `MainActivity`.
-
-### Bolade
-For phase 2, Bolade continued implementing Use Cases as a backend team member. She also worked on a "clean up" plan to 
-be used to clean up any clean architecture or SOLID principle violations. This is involved making a dependency graph of 
-the classes that were there or were to be implemented along with a sort of UML diagram that contained each 
-class/interface with their variables and/or methods and parameters. This was her most difficult task and took most of 
-her time as this required her to understand clean architecture and SOLID principles well enough and come up with any 
-solution to a problem that may have come to be in phase 1 or in phase 2, this can be seen within the [`clean architecture`](https://github.com/CSC207-UofT/course-project-generic-name-1/pull/97)
-pull request. Prior to working on the clean-up plan, she also went through the phase 1 rubric and made a list of 
-questions that her teammates added to that were to be asked to the TA in order to figure out what needed to change or 
-improve for phase 2. This helped a lot with the clean-up plan. She also aided the frontend team when they needed help 
-understanding a class or method that was implemented in the inner layers, such as the use case classes or 
-controllers/presenters. Lastly, she also wrote parts of SOLID and wrote the Clean Architecture section of the 
-design document.
-
-### Sari
-During his role as a backend member of the team, Sari was mainly tasked during Phase 1 to implement a working database.
-Despite the difficult task, Sari was able to learn the basics of SQLite, a local database used for Java, and share his 
-learning experience with the frontend team that needed to know how the database worked. Although the required database 
-helpers were successfully implemented, it was difficult for him to implement the database into the app during Phase 1 
-due to time constraints and some setbacks, which included some missing UI features at the time, which led to his 
-under-contribution. Sari became motivated to work harder during Phase 2 and successfully integrated the database while 
-also considering the features of SOLID and Clean Architecture in general by adding the necessary gateways and their 
-respective interfaces, which use the database to send/receive information to the use cases.
-This is partially demonstrated by the [`database-and-gateways`](https://github.com/CSC207-UofT/course-project-generic-name-1/pull/80) 
-pull request. In addition, he used his knowledge of SOLID, Clean Architecture and Design Patterns to help brainstorm and 
-identify potential and applicable Design Patterns and different ways to incorporate SOLID in the project, as demonstrated
-in the pull request above and the design document.
-
-### Daniel
-For both phase 1 and phase 2, Daniel is on the backend team working on the backbone of the program. For phase 2, Daniel 
-shifted his main focus on testing while also participating in implementing and discussing design patterns. 
-In the [`Use case tests`](https://github.com/CSC207-UofT/course-project-generic-name-1/pull/76)  pull request, Daniel 
-implemented all tests for the program's use cases and found several errors and discrepancies involving the 
-class `User`, `UserManager`, and `EventDateComparator`. He also found a bug in the regex validator for signing up, which 
-prevented the user to use `.` as a special character. In addition, in the pull request [`New Test Suite`](https://github.com/CSC207-UofT/course-project-generic-name-1/pull/101), Daniel learnt and implemented Android instrumented tests to test SQLite database, and refactored test packages to increase interpretability.
-In terms of the design document, Daniel wrote Code Organization and Testing. He made short GIFs detailing system setup 
-and how to run the program, which was a major issue in phase 1, where Evan was having problems launching our program.
-He also helped write the Design Patterns section together with Sari, which discusses various strategies with the backend.
-In addition, he contributed to the SOLID principle section of the progress report with Bolade, who wrote the majority of 
-the section.
