@@ -56,6 +56,8 @@ can now run the app by clicking on the "Run" button at the top right of the wind
 If you see [this](https://imgur.com/a/uoIiAwn) as the landing page and [this](https://imgur.com/a/pJIsR33) as the login
 page, you have launched successfully ([GIF example](https://imgur.com/a/XUPTtWK))!
 
+For more information on using the app, please see our [video demos](https://youtube.com/playlist?list=PLfS4ogr7ngHF258E0vH4_FQs3qThq5MNt).
+
 ## Authors
 * **Dana Al Shekerchi** - *Full Stack Developer* - [dalshekerchi](https://github.com/dalshekerchi)
 * **Bolade Amoussou** - *Back End Developer* - [cdw18](https://github.com/cdw18)
